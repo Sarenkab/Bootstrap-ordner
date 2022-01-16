@@ -140,7 +140,6 @@ background-color: #b2f0fb;
 }
 
 
-
 @media screen and (max-width : 1204px)
 {
   text, h1
@@ -150,6 +149,14 @@ background-color: #b2f0fb;
    text-align: left!important;
 
   }
+  @media (min-width: 576px) {
+    .header{
+      background-image: url(Responsive.jpg);
+      width:100%;
+      height: 230px;
+    }
+  }
+ 
 
 }
 
