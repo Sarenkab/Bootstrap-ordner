@@ -24,6 +24,9 @@
     
    
  }
+ .row:hover {
+ color: aqua;
+ }
 
  .jumbotron {
      background-image: url(Responsiven.jpg);
