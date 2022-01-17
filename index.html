@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
    
+    
+    
     <title>Bombay Sapphire</title>
   </head>
   <body>
@@ -146,9 +148,7 @@
     
   
   <h1>
-    Discover 
-    Bombay
-    Sapphire
+    Discover Bombay Sapphire
   </h1> 
  
   </div>
@@ -186,41 +186,48 @@
 <div class="row justify-content-md-center">
   <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
     <!--hier beginnt neu-->
-    <img
+   
+    <div class="hoverimg">
+        <img
       src="wäscheparüfm Aprilfrisch_.jpg"
-      class="w-100 shadow-1-strong mb-2"
+      class="w-100 shadow-1-strong mb-2 hoverimg"
       alt="">
-      
-    
+      </div>
+      <div class="hoverimg">
     <img
       src="wäscheparüfm perlen 4.jpg"
-      class="w-100 shadow-1-strong mb-4"
+      class="w-100 shadow-1-strong mb-4  "
       alt=""
       
-    >
+    > </div>
+    <div class="hoverimg">
     <img
       src="wäscheparüfm perlen.jpg"
-      class="w-100 shadow-1-strong mb-4"
+      class="w-100 shadow-1-strong mb-4  "
       alt=""
 
     >
+  </div>
 
 
   </div>
 
 
   <div class="col-lg-5 col-md-12 mb-4 mb-lg-0">
+    <div class="hoverimg">
     <img
       src="illublau.png"
-      class="w-100 shadow-1-strong mb-5"
+      class="w-100 shadow-1-strong mb-5  "
       alt=""
     />
-   
+  </div>
+   <div class="hoverimg">
     <img
       src="Rot.jpg"
-      class="w-100 shadow-1-strong mb-5"
+      class="w-100 shadow-1-strong mb-5  "
       alt=""
     />
+  </div>
     
   </div>
   
@@ -254,9 +261,21 @@
     
       
 
-<footer>
+
+
+  <footer>
+   
+        
 
   
+      
+    <img src="divider_blue.svg" alt="" class="imagee">
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2022 Copyright:
+      <a href="https://sarenkab.github.io/Bootstrap-ordner/"> Bombay Sapphire</a>
+    </div>
+    <!-- Copyright -->
 
  </footer>
 >
@@ -268,12 +287,17 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script>
-    $(window).scroll(function(){
-      $('nav').toggleClass('scrolled'),$(this).scrollTop()>50;
-    
-    });
-    </script>
+
+
+<script>$(document).ready(function() {
+  $(window).scroll(function() {
+    if($(this).scrollTop() > 700) { 
+        $('.navbar').addClass('solid');
+    } else {
+        $('.navbar').removeClass('solid');
+    }
+  });
+});</script>
 
   </body>
 </html>
